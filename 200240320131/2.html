@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>form</title>
+    <script src="2.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid"><br>
+        <h1 class=" text-center text-success">Form Validation</h1><br>
+        <div class="col-lg-8 m-auto d-block">
+            <form action="" onsubmit="return validation()" class="was-validated">
+                <div class="form-group">
+                    <label for="">Username:</label>
+                    <input type="text" id="user" placeholder="enter username " class="form-control" required
+                        autocomplete="off">
+                    <span id="u1" class="text-danger font-weight-bold"></span>
+                </div>
+                <div class="form-group">
+                    <label for="">Password:</label>
+                    <input type="text" id="pass" placeholder="enter Password" class="form-control" required
+                        autocomplete="off">
+                    <span id="p1" class="text-danger font-weight-bold"></span>
+                </div>
+                <div class="form-group">
+                    <label for="">Confirm Password:</label>
+                    <input type="text" id="conpass" placeholder="enter Password" class="form-control"
+                        autocomplete="off">
+                    <span id="c1" class="text-danger font-weight-bold"></span>
+                </div>
+                <input type="submit" value="submit" class="btn btn-success">
+
+                <div id="commentbox">display</div>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
